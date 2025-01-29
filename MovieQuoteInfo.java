@@ -1,10 +1,9 @@
 /* Program for Question 7, page 46: 
-* Write, compile, and test a class (MovieQuoteInfo) that displays: 
-    - Favorite movie quote 
-    - Movie it comes from 
-    - charecter who said it 
-    - Year of the movie
-    + be goofy while you still understand what is going on
+    * Write, compile, and test a class (MovieQuoteInfo) that displays: 
+        - Favorite movie quote 
+        - Movie it comes from 
+        - charecter who said it 
+        ~- Year of the movie 
  */
 
 public class MovieQuoteInfo {       //Named class 'MovieQuoteInfo'
