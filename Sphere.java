@@ -18,7 +18,7 @@ make all numerical values doubles.
          System.out.println("enter your Radius: "); //create a prompt for user
          double Radius = GivenRadius.nextDouble(); //read the Radius on the next line
      //calculations        
-         double pi = 22/7; //define pi
+         double pi = 3.14159; //define pi, 3.14159 works better then 22/7
          double Diameter = Radius*2; //find diameter = radius * two
          double Circumfrance = 2*pi*Radius; //the Circumfrance is 2(pi)r so this is what defines this
          double SurfaceArea = 4*pi*(Math.pow(Radius, 2)); //this is the SurfaceArea defined by 4*(pi)*(r^2)
