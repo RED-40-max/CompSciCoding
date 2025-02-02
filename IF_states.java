@@ -1,3 +1,5 @@
+
+//NOT REQIRED< SUSTAINED 
 import java.util.Scanner; //inputs a reading function 
 
 public class IF_states {
