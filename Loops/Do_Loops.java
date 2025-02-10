@@ -5,7 +5,7 @@
     + BONUS: do some intellgence guesses - nope not doing this i am 
  */
 
-public class Do_Loops {
+ public class Do_Loops {
 
     public static void main(String[] args){
 
