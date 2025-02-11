@@ -7,7 +7,7 @@ Test with:
     + any 3 numbers
     + 2 numbers that are the same
     + 3 numbers that are the same
- */
+ 
 
 import java.util.Scanner;
 
@@ -42,7 +42,7 @@ E) 3 > 2 > 1
 F) 3 > 1 > 2
 
 ++ add >= instead of > for handeling things that are equal number 
-*/
+
 
 //initalize largest and smallest variables so that it dosn't error out in the system print later
         float LargestNum = 1; 
@@ -87,15 +87,16 @@ F) 3 > 1 > 2
 
 //The alternative ways to sort it out
 
-/* 
-//    + using '.Math' a 'max()' and 'min()' only returns out of two numbers 
-float largest = Math.max(FirstValue, Math.max(SecondValue, ThirdValue)); // would sort like this 1 ?> (2 >? 3)
-float smallest = Math.min(FirstValue, Math.max(SecondValue, ThirdValue); // same here but assigns a min instead 1 ?> (2 >? 3)
-*/
  
-/* 
+//    + using '.Math' a 'max()' and 'min()' only returns out of two numbers 
+//float largest = Math.max(FirstValue, Math.max(SecondValue, ThirdValue)); // would sort like this 1 ?> (2 >? 3)
+//float smallest = Math.min(FirstValue, Math.max(SecondValue, ThirdValue); // same here but assigns a min instead 1 ?> (2 >? 3)
+
+ 
+
 //   +storing it into a list / array then sorting it and returning 1st and last value 
-    [FIND OUT LATER HOW TO DO THIS, IM LAZY, but it seems like a good way]
+    //[FIND OUT LATER HOW TO DO THIS, IM LAZY, but it seems like a good way]
+
 
 */
  
