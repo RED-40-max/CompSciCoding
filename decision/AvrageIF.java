@@ -98,3 +98,4 @@ float smallest = Math.min(FirstValue, Math.max(SecondValue, ThirdValue); // same
     [FIND OUT LATER HOW TO DO THIS, IM LAZY, but it seems like a good way]
 
 */
+ 
