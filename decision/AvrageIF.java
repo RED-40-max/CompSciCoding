@@ -1,3 +1,6 @@
+package decision;
+
+
 /* program: question 2, If statements assignment 
     + prompt user to enter 3 numbers 
     + print out numbers in order of smallest to largest 
