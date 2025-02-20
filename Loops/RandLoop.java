@@ -28,15 +28,17 @@ it will run this program, then increment i untill it cannot run anymore. */
 
 int RandNum; //initlize this operating number, the randomized number variable 
 
-        for (int i = 0; (numRounds >= i); i++){        
+        for (int counter = 0; (numRounds >= counter); counter++){   //for the number of specified rounds 
 
         do {
             RandNum = 0 + (int) (Math.random() * (10)); //randomly generates numbers between 0 and 9 
+            //int randomNum = min + (int)(Math.random() * ((max – min) + 1));
             System.out.print(RandNum + ", "); //print it out and sepreate it 
 
-        } while(RandNum != Value); // condition that the value is not reached 
+        } while(RandNum != Value); // when the random number isn't the specificied value 
             
-        System.out.println(" "); //then just start new line 
+        //if it is the specificed value, then it starts a new line    
+        System.out.println(" "); //start new line 
 
             }
 }           
