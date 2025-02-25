@@ -55,7 +55,8 @@ public class Convert {
             so by creating this 'multi-line string literal' i can print out the menue as it is 
             formatted within this block / as we see it in code. 
 
-            *-----* I solemly swear that i stumbled upon this, googled it, and understand what it is and 
+            *-----* I solemnly swear that I implimented this solution with the intent to learn 
+            through my own efforts, googled it, and understand what it is and 
             what it dose for this perticular instance within this program. *-----*
         */     
 
