@@ -11,7 +11,7 @@ tips
     - no need to reorder / change it, just print out the 
         numbers / do an output
 
- */
+
 
 import java.util.Scanner; 
 
@@ -23,7 +23,9 @@ public class Reverse {
     System.out.println("Input a Number: "); 
     int OGNumber = reader.nextInt();
 
-    Solver(OGNumber); 
+    int ReverseNum = 0; //the case for later, base case and storage space
+
+    Solver(OGNumber, ReverseNum); //sends it the user input and a 'blank' variable to work with
 
 //this is the thing that will be returned after we give a number
        //System.out.println(Solver(OGNumber)); 
@@ -31,25 +33,30 @@ public class Reverse {
         
             } 
         
+            public static void Solver(int OpNum, int RNum){
+
+              if (OpNum/10 == 0) { //base case: if OpNum is one digit then print it, but also leave leway for PNum
+                OpNum += RNum; //in the base case this will take the operating number and add 0 to it
+                //This will print the SINGLE DIGIT NUMBER or the FIRST DIGIT number after /10 operations
+
+                System.out.println("Reversed Number: " + OpNum);// prints the new edited number, 
+                //for this to work, the PNum must leave a space in the 1's place for the 1st digit of OG number to fill
+              } else{
+                //take the number and get the last digit of it, and add it to the running total
+                RNum += OpNum % 10; //also add it so that the RNum's last digit stays same but it also adds the next digit to the end
+                //get rid of the last Number that you just stored by dividing by 10 / get rid of the digit i the 1's place
+                OpNum /= 10; 
+                //then multiply the PNum by 10 so that it is stored in the second place for the last digit to be OpNum at the end
+                RNum *=10; 
+                //then do a recursive case to do next digit number, importing the two numbers that have been edited 
+                Solver(OpNum,RNum);
+              }
 
 
-        public static void Solver(int OpNum){
-
-
-            if (OpNum < 10 ){ // base case, if there is a single digit inputed aka. a number less then 10 
-                System.out.print(OpNum); // you return the number 
             }
-            else {
-                
-                System.out.print(OpNum %10); //prints out the last digit in the number 
-                Solver(OpNum/10); // since it is an int, if we divide by 10, we reduce the last number and  
-                 
+        }
+        
 
-            }
-            
-
-         }
-}
 
  /* Recursion
             + Base case: the answer / the thing printed out is 
@@ -142,11 +149,7 @@ public class Reverse {
      == ATTEMPT 4 ==   
             + so i was wrong, %10 prints the last digit and only has to be done once 
             + switching to void so i can print and not have to return anything just yet 
-            + also should probablly print the numbers as it gose instead of try and get one number
-                maybe like this
-                print('skibdi rizzing')
-
-                        
+            + also should probablly print the numbers as it gose instead of try and get one number                   
                     
                     }
                 
@@ -165,8 +168,58 @@ public class Reverse {
 
             }
         -- errors out for some reason
+            instead of that, think about it like a for loop and the OpNum is the thing you will take from 
+            and create a blank variable to add into 
+
+             The inital solution: 
+        looks good and works, but i don't like it / don't feel good about how i got it (searched up recusion concepts - to fix the reduction number and it flashbanged me lol), so scrap this and do one completly OG - with a second var 
+
+        public static void Solver(int OpNum){
+
+
+            if (OpNum < 10 ){ // base case, if there is a single digit inputed aka. a number less then 10 
+                System.out.print(OpNum); // you return the number 
+            }
+            else { //recursive case where we find the last number and return that, then get ride of the last number 
+                
+                System.out.print(OpNum %10); //prints out the last digit in the number 
+                Solver(OpNum/10); // since it is an int, if we divide by 10, we reduce the last number and  
+                 
+
+            }
+            
 
          }
-}
-            
+==Attempt 5== 
+        + this time i pivoted and worked on the other recusion problem first, that was like a million times easier and so 
+            i used thoses princaples for this work
+        code: 
+             public static void Solver(int OpNum, int RNum){
+
+              if (OpNum/10 == 0) { //base case: if OpNum is one digit then print it, but also leave leway for PNum
+                OpNum += RNum; //in the base case this will take the operating number and add 0 to it
+                //This will print the SINGLE DIGIT NUMBER or the FIRST DIGIT number after /10 operations
+
+                System.out.println("Reversed Number: " + OpNum);// prints the new edited number, 
+                //for this to work, the PNum must leave a space in the 1's place for the 1st digit of OG number to fill
+              } else{
+                //take the number and get the last digit of it, and add it to the running total
+                RNum += OpNum % 10; //also add it so that the RNum's last digit stays same but it also adds the next digit to the end
+                //get rid of the last Number that you just stored by dividing by 10 / get rid of the digit i the 1's place
+                OpNum /= 10; 
+                //then multiply the PNum by 10 so that it is stored in the second place for the last digit to be OpNum at the end
+                RNum *=10; 
+                //then do a recursive case to do next digit number, importing the 10 number and the other number 
+                Solver(OpNum,RNum);
+              }
+
+
+            }
+        --althought i have made a lot of changes to it, and got it to work, it is fundementally the same as the previous work 
+        i had done. 
+      
          */
+
+
+        
+            

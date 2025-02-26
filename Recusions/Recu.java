@@ -1,3 +1,4 @@
+
 /* Program: Recursion #2 turn in Fall 2021
     + Enter a number then the power 
     + program will print the answer
@@ -8,7 +9,7 @@
  the answer would be 8. (2^3)
     + assuming for only positive integers are inputed 
 
- */
+ 
 import java.util.Scanner; //imports the functions
 
 public class Recu {
@@ -66,7 +67,7 @@ public class Recu {
             this time i'm going to take running sum and take into the next recusion
 
 
-*/ 
+ 
 
     public static void Powerizer(int Num, int Power, int RunningSum){ //the base, power, and inital value 1 for the running sum is sent
 
@@ -80,7 +81,7 @@ public class Recu {
             Powerizer(Num, Power, RunningSum); //returns the Number and the reduced power for another iternation
                 /*since the Running Sum needs to be carried into the next recursion, make it it's own variable and 
                 send it to the next recusion 
-                */
+             
 
         }
 
@@ -90,3 +91,4 @@ public class Recu {
 
     
 }
+*/
