@@ -1,3 +1,4 @@
+package Arrays;
 /* Program: Arrays #1 Turn In
     + report on speending - limit = 55
     + data from 10 - diffrent people 
