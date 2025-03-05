@@ -17,7 +17,7 @@
         + instance of Employee class 
         + call method that reads in info 
         + Loop the main / selection process 
- */
+
 
 import java.util.Scanner; //this scans in and reads the users input
 
@@ -122,3 +122,4 @@ public class Company {
 
     }
 }
+ */

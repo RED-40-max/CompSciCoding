@@ -4,7 +4,7 @@
 
 
 
- */
+
 import java.util.Scanner ; //imports the scanner for the loop 
 
 public class CompanyMain {
@@ -29,3 +29,4 @@ public class CompanyMain {
 
     
 }
+ */
