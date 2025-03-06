@@ -1,5 +1,5 @@
 package classes;
-
+//see main bank for details 
 
 import java.util.Scanner; //for the recording method 
 
