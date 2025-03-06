@@ -1,3 +1,4 @@
+package Arrays;
 /* Program: Parallel Arrays Turn in
     + using 1-d arrays 
     + use Random number generator 
