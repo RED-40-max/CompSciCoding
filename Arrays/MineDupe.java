@@ -1,3 +1,4 @@
+package Arrays;
 /* program: Assignment 2D array 
     + load array with 10 bombs
     + let user guess a spot 
@@ -9,13 +10,17 @@
     + if user win 
         + print congrats 
 
-        given 
+        given - 
         bomb is (0)
         no bomb is (1)    
  to-do 
     + make CoolerMineGenerator() for specifiing an amount of mines an adding it 
     + making number wise - actual minesweaper 
     +  adding ability to flag 
+
+    SPECIAL CONTENT 
+        + makes the option to pick your own dimentions (x and y)
+        + shows how many bombs are within the matrix 
 
  */
 
@@ -82,7 +87,7 @@ public class MineDupe {
             /* makes the array row and compares it to the length of the array's row, in this case it is 10 
             and adds after looping */    
 
-                System.out.print(MineGuess[ArrColum][ArrRow] + " ");//prints out the matrix ( " " MineFeild[ArrColum][ArrRow] + " " ) to test congrats final function
+                System.out.print(MineGuess[ArrColum][ArrRow] + " ");//prints out the matrix (+ MineFeild[ArrColum][ArrRow] + " " ) to test congrats final function
             }
             System.out.println(" "); //return after each row for formatting
         }
@@ -187,9 +192,4 @@ public class MineDupe {
         }
     }   
 
-    public static void CoolerMineGenerator() 
-    {
-        
-    } 
-    
 }
